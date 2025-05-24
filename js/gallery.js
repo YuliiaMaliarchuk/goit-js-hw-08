@@ -90,7 +90,7 @@ galleryContainer.addEventListener('click', (event) => {
     const largeImageURL = clickedImage.dataset.source;
     const description = clickedImage.alt;
     
-    const modal = basicLightbox.create(`<img src="${largeImageURL}" alt="${description}" />`);
+    const instance = basicLightbox.create(`<img src="${largeImageURL}" alt="${description}" />`);
     
-    modal.show();
+    instance.show();
 });
